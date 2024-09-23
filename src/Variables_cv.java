@@ -21,6 +21,11 @@ public class Variables_cv {
          * Vypište, Přehoďte, Vypište,
          */
 
+        int a = 1;
+        int b = 2;
+
+        System.out.println();
+        
 
         /**
          * CV 2
