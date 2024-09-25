@@ -21,10 +21,11 @@ public class Variables_cv {
          * Vypište, Přehoďte, Vypište,
          */
 
-        int a = 1;
-        int b = 2;
+        int a = 10;
+        int b = 20;
 
-        System.out.println();
+        System.out.println("První číslo" + a);
+        System.out.println("Druhé číslo" + b);
         
 
         /**
