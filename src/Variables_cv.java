@@ -115,5 +115,21 @@ public class Variables_cv {
         final String CYAN = "\u001B[36m";
         final String WHITE = "\u001B[37m";
         */
+
+
+        // načíst od uživatele 2 strany obdélníku 
+        // vypsat jeho obvod
+
+        int Strana1 = 1040;
+        int Strana2 = 1010;
+        int obvod =  2 * (Strana1 + Strana2);
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Zadejte obvod" + obvod);
+
+        // načíst stupně celsius a převest na F
+
+        int stupnen = 0;
+        int celsius = 
+        int F = 
     }
 }
