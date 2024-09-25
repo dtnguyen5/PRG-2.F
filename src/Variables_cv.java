@@ -41,12 +41,16 @@ public class Variables_cv {
          * Výsledky vypište na konzoli
          */
 
-        int num1 = 12;
-        int num2 = 20;
+        double num1 = 12;
+        double num2 = 20;
 
         int some = num1 + num2;
 
         System.out.println(num1 + num2);
+        System.out.println(num1 - num2);
+        System.out.println(num1 * num2);
+        System.out.println(num1 / num2);
+        
 
         
         /**
@@ -55,12 +59,34 @@ public class Variables_cv {
          * Výsledek vypište na konzoli
          */
 
+        boolean isBigger = 'a' + 'b' + 'c' > 300;
+
+         System.out.println("je součet větší než 300?;" + isBigger);
+
         /**
          * CV 4
          * Zeptejte se uživatele na jeho, jméno, příjmení, PSČ a rodné číslo
          * Údaje pak uživateli vypište
          */
 
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Zadejte jméno");
+        String jmeno = sc.next();
+        
+        System.out.println("Zadejte prijmeni");
+        String prijmeni = sc.next();
+        
+        System.out.println("Zadejte PSC");
+        Int PSC = sc.nextInt();
+        
+        System.out.println("Zadejte rodné cislo");
+        String rodnecislo = sc.next();
+
+        System.out.println("jmeno" + jmeno);
+        System.out.println("prijmeni" + prijmeni);
+        System.out.println("PSC" + PSC);
+        System.out.println("rodnecislo" + rodnecislo);
+      
         /**
          * CV 5
          * Vygenerujte šachovnici o velikosti NxN, kde N je vstup od uživatele
