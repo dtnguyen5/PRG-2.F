@@ -28,7 +28,6 @@ public class Variables_cv {
         System.out.println("Druhé číslo" + b);
 
         int temp = 0;
-
         temp = a;
         a = b;
         b = temp
