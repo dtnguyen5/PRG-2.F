@@ -41,6 +41,14 @@ public class Variables_cv {
          * Výsledky vypište na konzoli
          */
 
+        int num1 = 12;
+        int num2 = 20;
+
+        int some = num1 + num2;
+
+        System.out.println(num1 + num2);
+
+        
         /**
          * CV 3
          * Uložte do proměnné pravdivostního typu, zda součet 3 libovolných malých písmen je větší než 300.
