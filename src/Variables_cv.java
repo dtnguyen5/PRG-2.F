@@ -129,10 +129,16 @@ public class Variables_cv {
         int B = scn.nextInt();
         
         System.out.println(2*(A+B));
-        // načíst stupně celsius a převest na F
 
-        int stupnen = 0;
-        int celsius = 
-        int F = 
+
+        
+        // načíst stupně celsius a převest na F
+        // °F = °C × (9/5) + 32
+
+        System.out.println("Zadej teplotu ve stupních celsius");
+        double celsius = scn.nextDouble();
+        double F = celsius * (9/5) + 32;
+
+        System.out.println("Teplota ve F:" + F);
     }
 }
