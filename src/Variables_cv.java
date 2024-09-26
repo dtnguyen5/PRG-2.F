@@ -137,8 +137,41 @@ public class Variables_cv {
 
         System.out.println("Zadej teplotu ve stupních celsius");
         double celsius = scn.nextDouble();
-        double F = celsius * (9/5) + 32;
+        double F = celsius * (9.0/5.0) + 32;
 
         System.out.println("Teplota ve F:" + F);
+
+        // náhodné generování čísla
+
+        // první možnost
+
+        int max = 50;
+        int min = 12;
+       // prvni moznost Math.random() * (max - min) min;
+
+        // druha moznost dole
+
+        Random rng = new Random();
+        rng.nextInt(15, 50);
+
+
+        // načíst od uživatele horní a
+        // spodní mez a vypište mu náhodné číslo v rozmezí
+
+
+
+        int maxx = 50;
+        int minn = 12;
+
+        Scanner scn1 = new Scanner(System.in);
+        System.out.println("Zadejte horní mez");
+        int h = scn1.nextInt();
+        System.out.println("Zadejte spodní mez");
+        int s = scn1.nextInt();
+
+        Random rngg = new Random();
+        int horni = rngg.nextInt();
+        System.out.println(horni);
+        
     }
 }
