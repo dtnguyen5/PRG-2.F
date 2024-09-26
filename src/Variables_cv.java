@@ -120,12 +120,15 @@ public class Variables_cv {
         // načíst od uživatele 2 strany obdélníku 
         // vypsat jeho obvod
 
-        int Strana1 = 1040;
-        int Strana2 = 1010;
-        int obvod =  2 * (Strana1 + Strana2);
         Scanner scn = new Scanner(System.in);
-        System.out.println("Zadejte obvod" + obvod);
 
+        System.out.println("Zadej stranu A:");
+        int A = scn.nextInt();
+
+        System.out.println("Zadej stranu B:");
+        int B = scn.nextInt();
+        
+        System.out.println(2*(A+B));
         // načíst stupně celsius a převest na F
 
         int stupnen = 0;
