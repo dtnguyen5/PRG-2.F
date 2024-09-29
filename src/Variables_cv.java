@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Variables_cv {
@@ -14,7 +15,7 @@ public class Variables_cv {
 //        type bigA = 'A';                      // jeden znak, píše se do ''
 //        type name = "Jmeno";                  // textový řetězec (znak/slovo/text), píše se do "";
 
-        /**
+        /*
          * CV 1
          * Uložte 2 libovolná čísla do 2 proměnných
          * Poté je:
@@ -30,12 +31,12 @@ public class Variables_cv {
         int temp = 0;
         temp = a;
         a = b;
-        b = temp
+        b = temp;
             
         System.out.println("První číslo" + a);
         System.out.println("Druhé číslo" + b);
 
-        /**
+        /*
          * CV 2
          * Napište jednoduchou kalkulačku, která bude umět +, -, *, / nad dvěma čísly z množiny R (Reálných čísel).
          * Výsledky vypište na konzoli
@@ -44,7 +45,7 @@ public class Variables_cv {
         double num1 = 12;
         double num2 = 20;
 
-        int some = num1 + num2;
+        double some = num1 + num2; //int
 
         System.out.println(num1 + num2);
         System.out.println(num1 - num2);
@@ -53,7 +54,7 @@ public class Variables_cv {
         
 
         
-        /**
+        /*
          * CV 3
          * Uložte do proměnné pravdivostního typu, zda součet 3 libovolných malých písmen je větší než 300.
          * Výsledek vypište na konzoli
@@ -63,7 +64,7 @@ public class Variables_cv {
 
          System.out.println("je součet větší než 300?;" + isBigger);
 
-        /**
+        /*
          * CV 4
          * Zeptejte se uživatele na jeho, jméno, příjmení, PSČ a rodné číslo
          * Údaje pak uživateli vypište
@@ -77,7 +78,7 @@ public class Variables_cv {
         String prijmeni = sc.next();
         
         System.out.println("Zadejte PSC");
-        Int PSC = sc.nextInt();
+        int PSC = sc.nextInt();
         
         System.out.println("Zadejte rodné cislo");
         String rodnecislo = sc.next();
@@ -87,7 +88,7 @@ public class Variables_cv {
         System.out.println("PSC" + PSC);
         System.out.println("rodnecislo" + rodnecislo);
       
-        /**
+        /*
          * CV 5
          * Vygenerujte šachovnici o velikosti NxN, kde N je vstup od uživatele
          * int n;
