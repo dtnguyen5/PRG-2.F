@@ -156,23 +156,23 @@ public class Variables_cv {
         rng.nextInt(15, 50);
 
 
-        // načíst od uživatele horní a
-        // spodní mez a vypište mu náhodné číslo v rozmezí
+        // načíst od uživatele horní a spodní mez a vypište mu náhodné číslo v rozmezí
 
+        // Načítání vstupu od uživatele
+        Scanner scn_2 = new Scanner(System.in);
 
+        // Načtení horní a spodní meze
+        System.out.println("Zadejte spodní mez:");
+        int s = scn.nextInt();  // spodní mez
 
-        int maxx = 50;
-        int minn = 12;
+        System.out.println("Zadejte horní mez:");
+        int h = scn.nextInt();  // horní mez
 
-        Scanner scn1 = new Scanner(System.in);
-        System.out.println("Zadejte horní mez");
-        int h = scn1.nextInt();
-        System.out.println("Zadejte spodní mez");
-        int s = scn1.nextInt();
+        // Generování náhodného čísla v zadaném rozmezí
+        int randomCislo = (int)(Math.random() * (h - s + 1)) + s;
 
-        Random rngg = new Random();
-        int horni = rngg.nextInt();
-        System.out.println(horni);
+        // Výpis vygenerovaného čísla
+        System.out.println("Vygenerované číslo: " + randomCislo);
         
     }
 }
