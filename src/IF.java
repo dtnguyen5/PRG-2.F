@@ -13,6 +13,8 @@ public class IF {
         }
         else { // tady mi vyskočí orel
             System.out.println("Bohužel někdy přístě, PADL OREL");
+
+            System.out.println();
         }
     }
 }
