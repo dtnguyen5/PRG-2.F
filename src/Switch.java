@@ -19,6 +19,9 @@ public class Switch {
         }
         // ctrl + alt + l
 
+        // 3 priklady
+        // Or + Random
+        // Sleva, scenar
 
 
     }
