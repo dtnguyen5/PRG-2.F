@@ -96,7 +96,8 @@ public class Pripava_test_dva {
         0, pokud je objednávká zamítnuta a chybová hláška Pokus o překupnictví.
          */
 
-        /* vysledek tretioho zadani
+            /*
+         vysledek tretioho zadani
         Scanner scnLahve = new Scanner(System.in);
 
         int ginCena = 540;
@@ -106,7 +107,10 @@ public class Pripava_test_dva {
         int pocetLahvi = scnLahve.nextInt();
 
         // Pokud objednávka překračuje 50 lahví
-        if (pocetLahvi > 50) {
+        if (pocetLahvi <= 0 || pocetLahvi > 100){
+            System.out.println("Zadejte čísla mezi 0 - 100");
+        }
+        else if (pocetLahvi > 50) {
             System.out.println("Pokus o překupnictví");
             celkovaCena = 0; // Cena je 0 při zamítnutí objednávky
         }
@@ -129,9 +133,12 @@ public class Pripava_test_dva {
         else {
             System.out.println("Neplatný počet lahví");
         }
+
+        scnLahve.close();
+
         */
 
-            // B
+        // B
 
         /*
         Příklad 1
