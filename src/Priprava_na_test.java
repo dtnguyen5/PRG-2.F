@@ -211,5 +211,104 @@ public class Priprava_na_test {
 
          */
 
+        /*
+
+        /*
+            2. Cenová kalkulace při prodeji vstupenek na koncert:
+            Uživatel zadá počet vstupenek, které chce koupit na koncert.
+            Cena jedné vstupenky je 1200 Kč.
+                    Pokud uživatel objedná 1–5 vstupenek, platí plnou cenu.
+            Pokud objedná 6–10 vstupenek, dostane slevu 15 %.
+            Pokud objedná 11–20 vstupenek, dostane slevu 25 %.
+            Pokud objedná více než 20 vstupenek, objednávka je zamítnuta, protože překračuje limit.
+            Program vypíše celkovou cenu, kterou uživatel zaplatí, nebo informaci, že objednávka byla zamítnuta.
+        */
+
+        /*
+
+        vysledek druheho zadani v prakticke podmince
+
+        Scanner scn = new Scanner(System.in);
+
+        int cenaJedneVstupenky = 1200;
+
+        System.out.println("Zadejte počet vstupenek");
+        int pocetVstupenek = scn.nextInt();
+
+        double celkovaCena = 0;
+
+        if (pocetVstupenek > 20) {
+            System.out.println("Objednávka zamítnuta, překračujete limit");
+        }
+        // Sleva 25 % pro 11-20 vstupenek
+        else if (pocetVstupenek >= 11) {
+            celkovaCena = pocetVstupenek * cenaJedneVstupenky * 0.75;
+            System.out.println("Celková cena se slevou 25 %: " + celkovaCena + " Kč");
+        }
+        // Sleva 15 % pro 6-10 vstupenek
+        else if (pocetVstupenek >= 6) {
+            celkovaCena = pocetVstupenek * cenaJedneVstupenky * 0.85;
+            System.out.println("Celková cena se slevou 15 %: " + celkovaCena + " Kč");
+        }
+        // Plná cena pro 1-5 vstupenek
+        else if (pocetVstupenek >= 1) {
+            celkovaCena = pocetVstupenek * cenaJedneVstupenky;
+            System.out.println("Celková cena: " + celkovaCena + " Kč");
+        }
+        // Pokud je zadán neplatný počet vstupenek (např. 0 nebo záporné číslo)
+        else {
+            System.out.println("Neplatný počet vstupenek");
+        }
+        */
+
+
+
+        /*
+        3. Výpočet ceny za spotřebu vody:
+        Uživatel zadá svou měsíční spotřebu vody v litrech.
+
+        Program vypočítá a vypíše, kolik uživatel zaplatí celkem za spotřebu vody za daný měsíc.
+
+        Cena za 1 litr vody se odvíjí od spotřeby podle následujícího ceníku:
+
+        spotřeba v litrech	Cena za 1 litr
+        0 – 4999	0,03 Kč
+        5000 – 9999	0,025 Kč
+        10 000 – 14 999	0,02 Kč
+        15 000 a více	0,015 Kč
+         */
+
+
+        /*
+            vysledek spotreby vody
+
+        Scanner voda = new Scanner(System.in);
+
+        System.out.println("Zadejte vaší měsíční spotřebu vody");
+        int spotreba = voda.nextInt();
+
+        double cenaZaLitr = 0;
+
+        if (spotreba >= 0 && spotreba<=4999){
+            cenaZaLitr = 0.03;
+        }
+        else if (spotreba >= 5000 && spotreba <= 9999) {
+            cenaZaLitr = 0.03;
+        }
+        else if (spotreba >= 10000 && spotreba <= 14999) {
+            cenaZaLitr = 0.02;
+        }
+        else if(spotreba >= 15000){
+            cenaZaLitr = 0.0015;
+        }
+
+        double celkovaSpotrebaVody = spotreba + cenaZaLitr;
+
+        System.out.println("Celková spotřeba vody za měsic: " + celkovaSpotrebaVody + "Kč");
+
+         */
+
+
+
     }
 }
