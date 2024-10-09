@@ -154,6 +154,10 @@ public class Pripava_test_dva {
         Pokud nesplní všechny podmínky -> Nemůžete darovat krev.
          */
 
+            /*
+
+            Vysledek prvni B zadani
+
             Scanner Scan = new Scanner(System.in);
 
             System.out.println("Zadejte vaší váhu");
@@ -168,6 +172,43 @@ public class Pripava_test_dva {
             else {
                 System.out.println("Nemůžete darovat krev");
             }
+
+
+
+            /*
+                Příklad 2
+                Zadání
+                Simulujete hození tří kostek.
+                Kostky mají klasicky hodnotu 1 - 6, generovanou náhodně.
+                Uživatel vyhrál, pokud jsou alespoň dvě kostky stejné
+                Vypište, zda uživatel vyhrál.
+                Vstup
+                Není vyžadován
+                Výstup
+                Hodnoty všech hozených kostek
+                Dle uvedené podmínky Vyhrál/Prohrál
+             */
+
+            /*
+            Random ran = new Random();
+
+            int hodnotaKostky1 = ran.nextInt(1,7);
+            int hodnotaKostky2 = ran.nextInt(1,7);
+            int hodnotaKostky3 = ran.nextInt(1,7);
+
+            System.out.println("Hodnota první kostky: " + hodnotaKostky1);
+            System.out.println("Hodnota druhé kostky: " + hodnotaKostky2);
+            System.out.println("Hodnota třetí kostky: " + hodnotaKostky3);
+
+            if (hodnotaKostky1 == hodnotaKostky2 || hodnotaKostky2 == hodnotaKostky3 || hodnotaKostky1 == hodnotaKostky3){
+                System.out.println("Vyhráli jste");
+            }
+            else {
+                System.out.println("prohráli jste");
+            }
+
+
+             */
 
 
         }
