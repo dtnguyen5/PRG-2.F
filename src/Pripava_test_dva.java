@@ -189,7 +189,7 @@ public class Pripava_test_dva {
                 Dle uvedené podmínky Vyhrál/Prohrál
              */
 
-            /*
+            /* reseni druhe B
             Random ran = new Random();
 
             int hodnotaKostky1 = ran.nextInt(1,7);
@@ -210,6 +210,60 @@ public class Pripava_test_dva {
 
              */
 
+
+            /*
+            Příklad 3
+            Zadání
+            Uživatel bude platit za elektřinu.
+
+            Do programu zadá svou spotřebu (kWh).
+
+            Podle toho, kolik spotřeboval, tak mu bude vypočtena cena za 1 kWh.
+
+            Ceník je:
+
+            spotřeba v kWh	Cena za 1 kWh
+            0 – 199	8 Kč
+            200 – 399	7 Kč
+            400 - 599	6 Kč
+            600 a více	5 Kč
+            Vstup
+            spotřeba elektřiny
+            vždy celé číslo v rozmezí 0 - 10 000
+            Uživatel vždy zadá validní vstup (Né číslo s desetinou čárkou, řetězec, znak, apod.)
+            Uživatel zadá právě jedno číslo.
+            Výstup
+            Cena za elektřínu
+             */
+
+            Scanner can = new Scanner(System.in);
+
+            System.out.println("Zadejte vasi spotrebu v kWh");
+            int spotrebakWh = can.nextInt();
+
+            double cenaZaJednukWh = 0;
+
+            if (spotrebakWh <= 0 || spotrebakWh > 10000){
+                System.out.println("Zadejte spotrebu mezi 0 - 10000");
+            }
+            else {
+                if (spotrebakWh > 600){
+                    cenaZaJednukWh = 5;
+                }
+                else if(spotrebakWh >= 400){
+                    cenaZaJednukWh = 6;
+                }
+                else if (spotrebakWh >= 200) {
+                    cenaZaJednukWh = 7;
+                }
+                else{
+                    cenaZaJednukWh = 8;
+                }
+            }
+
+            cenaZaJednukWh = spotrebakWh * cenaZaJednukWh;
+
+            System.out.println("Cena za elektřinu je " + cenaZaJednukWh + "Kč");
 
         }
     }
