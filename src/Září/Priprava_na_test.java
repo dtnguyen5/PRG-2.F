@@ -1,5 +1,4 @@
-import java.util.Random;
-import java.util.Scanner;
+package Září;
 
 public class Priprava_na_test {
     public static void main(String[] args) {

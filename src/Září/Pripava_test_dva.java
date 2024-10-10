@@ -1,6 +1,7 @@
+package Září;
+
 import java.util.Scanner;
-import java.util.Random;
-import java.util.Scanner;
+
 public class Pripava_test_dva {
     public class Priprava_na_test_2 {
         public static void main(String[] args) {
