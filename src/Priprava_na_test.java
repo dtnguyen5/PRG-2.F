@@ -302,7 +302,7 @@ public class Priprava_na_test {
             cenaZaLitr = 0.0015;
         }
 
-        double celkovaSpotrebaVody = spotreba + cenaZaLitr;
+        double celkovaSpotrebaVody = spotreba * cenaZaLitr;
 
         System.out.println("Celková spotřeba vody za měsic: " + celkovaSpotrebaVody + "Kč");
 
