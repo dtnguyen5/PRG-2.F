@@ -1,3 +1,5 @@
+package Září;
+
 import java.util.Random;
 
 public class IF {

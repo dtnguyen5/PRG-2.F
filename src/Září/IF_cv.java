@@ -1,6 +1,5 @@
-import org.w3c.dom.ls.LSOutput;
+package Září;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class IF_cv {

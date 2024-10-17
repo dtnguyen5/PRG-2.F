@@ -1,3 +1,5 @@
+package Září;
+
 public class Helloworld {
     public static void main(String[] args) {
         System.out.println("Je mi to jedno něco tady bude");
@@ -16,8 +18,8 @@ public class Helloworld {
         System.out.println("BLABAL");
         System.out.println("BLABAL");
         System.out.println("BLABAL");
-        System.out.println("BLABAL");
 
+;
 
     }
 }
