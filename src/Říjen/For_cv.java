@@ -71,19 +71,57 @@ public class For_cv {
 
         // Ruska ruleta
 
+        /*
         int dead = 13;
         Random rng = new Random();
 
         int hod = -1;
+        int pocetSmrti = 0;
+        int pocetHodu = 1000;
 
 
-        for (int i = 1; i <= 10; i++ ){
+        for (int i = 1; i <= 100; i++ ){
+
             hod = rng.nextInt(1, 21);
+
             if (hod == dead){
-                System.out.println("Zdechl si");
+                pocetSmrti++;
             }
         }
 
+        System.out.println("Počet smrtí = " + ((pocetSmrti * 100.0)/pocetHodu));
+
+
+         */
+
+        //Úkol 4
+        //hoďte 1 000 000 mincí a vypište, s jakou pravděpodobností padla hlava a s jakou orel
+
+        int panna  = 1;
+        int orel = 2;
+        Random rng = new Random();
+
+        int hod = -1;
+        int pocetPanny = 0;
+        int pocetOrla = 0;
+        int pocetHodu = 1000000;
+
+
+        for (int i = 1; i <= 100; i++ ){
+
+            hod = rng.nextInt(3);
+
+            if (hod == panna){
+                pocetPanny ++;
+                System.out.println("Padla panna");
+            }
+            else {
+                System.out.println(" Padl orel ");
+                pocetOrla ++;
+            }
+        }
+
+        System.out.println("Počet hozeni panny je: " + pocetPanny);
 
     }
 }
