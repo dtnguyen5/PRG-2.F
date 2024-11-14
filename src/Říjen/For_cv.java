@@ -97,6 +97,7 @@ public class For_cv {
         //Úkol 4
         //hoďte 1 000 000 mincí a vypište, s jakou pravděpodobností padla hlava a s jakou orel
 
+        /*
         int panna  = 1;
         int orel = 2;
         Random rng = new Random();
@@ -122,6 +123,10 @@ public class For_cv {
         }
 
         System.out.println("Počet hozeni panny je: " + pocetPanny);
+
+         */
+
+
 
     }
 }
