@@ -29,6 +29,9 @@ public class string_3 {
         System.out.println("Nové číslo: " + ciselnaHodnotaRadky);
          */
 
+        // ukol 2
+
+        /*
 
         Scanner sc = new Scanner(System.in);
 
@@ -41,9 +44,26 @@ public class string_3 {
         System.out.println("Řetězec začíná na " + zacatekVety + ": " + veta.startsWith(zacatekVety));
         System.out.println("Řetězec končí na " + konecVety + ": " + veta.endsWith(konecVety));
 
-
-
         sc.close();
+
+         */
+
+        // ukol 3
+
+        // Nacist vstup
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Zadejte vetu: ");
+        String veta2 = scan.nextLine();
+
+        System.out.println("Zadejte zacatek (index): ");
+        int zacatek = scan.nextInt();
+        System.out.println("Zadejte konec (index): ");
+        int konec = scan.nextInt();
+        // nacteno
+
+        // Vypis
+        System.out.println(veta2.substring(zacatek, konec));
 
 
 
