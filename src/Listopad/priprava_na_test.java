@@ -184,12 +184,12 @@ public class priprava_na_test {
         //Doplň podmínku, která ověří, zda je heslo dlouhé alespoň 8 znaků a současně obsahuje písmeno a:
 
         String password = "heslo123";
-        if(password.length() >= 8 && password.contains("a")) {
+        if(password.length() >= 8 && password.indexOf('a') != -1) {
             System.out.println("Heslo je platné");
         } else {
             System.out.println("Heslo není platné");
         }
-
+        
         //Zadání 8: Kontrola vstupů
         //Zkontroluj, zda obě proměnné x a y jsou větší než nula:
 
