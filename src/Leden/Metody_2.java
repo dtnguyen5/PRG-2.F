@@ -34,6 +34,10 @@ public class Metody_2 {
         return vstup;
     }
 
+    static double sum(double a, double b){
+        return  a + b;
+    }
+
 
     static void print(String msq){
         System.out.println(msq);
@@ -56,8 +60,13 @@ public class Metody_2 {
         System.out.println(vstup1 + vstup2);
 
 
-
         print("Ahoj světe");
+
+
+
+        double vysledekk = sum(5.6, 4.2);
+
+        System.out.println(vysledekk);
 
 
 
