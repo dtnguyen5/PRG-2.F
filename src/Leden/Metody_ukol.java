@@ -20,7 +20,7 @@ public class Metody_ukol {
         }
 
 
-        // 3. Vaše libovolná podmínka: Heslo musí obsahovat alespoň jedno velké písmeno
+        // 3. Vaše libovolná podmínka
 
         if (password.equals(password.toLowerCase())) {
             System.out.println("Heslo nesplňuje jednu z podmínek: \"neobsahuje velké písmeno\"");
