@@ -4,11 +4,14 @@ public class Metody_ukol {
 
     static void validatePassword(String password){
 
+        boolean valid = true;
+
+
         // 1. Heslo musí být alespoň 8 znaků.
 
         if (password.length() < 8) {
             System.out.println("Heslo nesplňuje jednu z podmínek: \"délka\"");
-            return;
+            valid = false;
         }
 
 
@@ -16,7 +19,7 @@ public class Metody_ukol {
 
         if (password.toLowerCase().contains("heslo")) { // contains mi tady zkontroluje, jestli v textu je podřetězec "heslo"
             System.out.println("Heslo nesplňuje jednu z podmínek: \"obsahuje zakázané slovo\"");
-            return;
+            valid = false;
         }
 
 
@@ -24,10 +27,12 @@ public class Metody_ukol {
 
         if (password.equals(password.toLowerCase())) {
             System.out.println("Heslo nesplňuje jednu z podmínek: \"neobsahuje velké písmeno\"");
-            return;
+            valid = false;
         }
 
-        System.out.println("Heslo je v pořádku");
+        if (valid){
+            System.out.println("Heslo je v pořádku");
+        }
     }
 
     public static void main(String[] args) {
