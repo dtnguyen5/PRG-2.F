@@ -80,13 +80,16 @@ public class Metody_4 {
             word = new StringBuilder("_".repeat(secret.length()));
         }
 
+        secret = secret.toLowerCase();
+        guess = Character.toLowerCase(guess);
+
         for(int i = 0; i < secret.length(); i++){
             if(secret.charAt(i) == guess){
                 word.setCharAt(i, guess);
                 correctGuess = true;
             }
         }
-        System.out.println("\n--- " + word + " ---");
+        System.out.println("\n\t\t" + word + "\t\t");
         return correctGuess;
     }
 
