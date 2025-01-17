@@ -243,7 +243,7 @@ public class Main {
 public class Main {
     public static void main(String[] args) {
 
-    // Zde byly proste věty a určit cyklus, zde budou i kódy cyklů pro přehled (NEMUSEL SI PSAT RUCNE CELOU HRUZU JENOM URCIT CYKLUS)
+    // Zde byly proste věty a určit cyklus, zde budou i kódy cyklů pro přehled (NEMUSEL SI PSAT RUCNE CELOU HRUZU JENOM URCIT CYKLUS, JESTLI WHILE, DO WHILE NEBO FOR)
 
 
     // Sčítání čísel: Napište program, který sečte všechna čísla od 1 do 100 a zobrazí výsledek.
