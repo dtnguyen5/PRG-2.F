@@ -19,3 +19,30 @@ public class Main {
         input.close();
     }
 }
+
+
+## Úkol 2: Základní matematické operace
+
+### Kód
+```java
+public class Main {
+    public static void main(String[] args) {
+        double a = 124.156;
+        double b = 0.111;
+
+        double soucet = a + b;
+        double rozdil = a - b;
+        double soucin = a * b;
+
+        double podil = 0; // Výsledek při dělení nulou
+        if (b != 0) {
+            podil = a / b;
+        }
+
+        System.out.println(soucet);
+        System.out.println(rozdil);
+        System.out.println(soucin);
+        System.out.println(podil);
+    }
+}
+```
