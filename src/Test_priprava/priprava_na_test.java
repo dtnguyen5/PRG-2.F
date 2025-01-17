@@ -1,4 +1,4 @@
-package Listopad;
+package Test_priprava;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -100,13 +100,13 @@ public class priprava_na_test {
         boolean isTrue = !((palindrom.startsWith("()") || palindrom.endsWith(")(")) && palindrom.length() > 4);
 // Výraz vrací true, protože podmínka uvnitř není splněna.
 
-// Úkol 9
-        String test = "Dostanu jedničku.";
+    // Úkol 9
+            String test = "Dostanu jedničku.";
 
-// Metody length(), charAt(), indexOf()
-        System.out.println(test.length()); // Vrací délku řetězce: 18
-        System.out.println(test.charAt(3)); // Vrací znak na indexu 3: "t"
-        System.out.println(test.indexOf("u")); // Vrací index prvního výskytu "u": 7
+    // Metody length(), charAt(), indexOf()
+            System.out.println(test.length()); // Vrací délku řetězce: 18
+            System.out.println(test.charAt(3)); // Vrací znak na indexu 3: "t"
+            System.out.println(test.indexOf("u")); // Vrací index prvního výskytu "u": 7
 
 
 
