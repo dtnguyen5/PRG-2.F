@@ -20,6 +20,7 @@ public class Main {
     }
 }
 
+---
 
 ## Úkol 2: Základní matematické operace
 
