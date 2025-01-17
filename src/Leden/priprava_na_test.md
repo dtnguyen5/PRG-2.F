@@ -147,6 +147,71 @@ for (int j = 0; j < 5; j++) {
     System.out.println("For: " + j);
 }
 
+```
+
+# Úkol 8: Výpočet v Javě
+
+## Kód
+```java
+public class Main {
+    public static void main(String[] args) {
+
+// Vypočítat kolik tohle vyjde 
+     int vysledek = 85 / 100; // je to 0
+//vysveletní - Důvodem je, že obě čísla (85 a 100) i proměnná vysledek jsou typu int, a při celočíselném dělení se desetinná část vždy ořízne. Proto se výsledek 85 / 100 se rovná 0. Pro získání výsledku 0.85 je třeba použít typ double nebo float
+    }
+}
+
+```
+
+# úkol 9: Analýza kódu: Kontrola podmínek v řetězci
+
+## Kód
+```java
+
+public class Main {
+    public static void main(String[] args) {
+
+    String palindrom = "())(";
+    boolean isTrue = !((palindrom.startsWith("()") || palindrom.endsWith(")(")) && palindrom.length() > 4);
+
+    // Hodnota isTrue vyjde jako true, protože negace ! obrací výsledek podmínky. Pojďme to rozebrat krok za krokem:
+    // palindrom.startsWith("()"): Řetězec "())(" začíná podřetězcem "()", takže tato část je true.
+    // palindrom.endsWith(")("): Řetězec "())(" končí podřetězcem ")(", takže tato část je také true.
+    // palindrom.length() > 4: Délka řetězce "())(" je 4, takže tato část je false.
+
+    //Kombinace:
+    //(true || true) je true.
+    //(true && false) je false.
+
+    }
+}
+
+```
+
+# Úkol 10: Práce s řetězci v Javě
+# Kód
+```java
+public class Main {
+    public static void main(String[] args) {
+
+    String test = "Dostanu jedničku.";
+    
+    // Metody length(), charAt(), indexOf(), trim(), subString(), toUpperCase, toLowerCase
+    // zde bylo jenom zadání, které metody slouží k čemu, takže stačilo doplnit např. test.toLowerCase
+    System.out.println(test.length()); // Vrací délku řetězce: 18
+    System.out.println(test.charAt(3)); // Vrací znak na indexu 3: "t"
+    System.out.println(test.indexOf("u")); // Vrací index prvního výskytu "u": 7
+    }
+}
+
+```
+
+
+
+
+
+
 
 
 
