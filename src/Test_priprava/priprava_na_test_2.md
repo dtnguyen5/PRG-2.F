@@ -233,7 +233,7 @@ public class Main {
             System.out.println("Ne");
         }
          */
-        //vysledek: A: Ano
+        //vysledek: a: Ano
    
     }
 }
