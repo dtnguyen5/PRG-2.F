@@ -331,7 +331,7 @@ public class Main {
 }
 
 ```
-## Úkol 14: Modulo operátor 
+## Úkol 15: Secret
 
 ### Kód
 ```java
