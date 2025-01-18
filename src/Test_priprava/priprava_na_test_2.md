@@ -13,9 +13,9 @@ public class Main {
 
       // Úkol 1: Vyhodnocení celočíselného dělení Vyhodnoťte výraz ručně a zvolte správnou odpověď:
       // a : 0.85
-      //b : 0
-      //c : 1
-      //d : Error, nespustí se program.
+      // b : 0
+      // c : 1
+      // d : Error, nespustí se program.
 
       int vysledek = 85 / 100; // / Výsledek bude 0, protože dělení celých čísel v Javě vrací celočíselný výsledek.
     }
@@ -32,13 +32,13 @@ public class Main {
     public static void main(String[] args) {
 
     // Úkol 2: Porovnání řetězců Vyhodnoťte výraz ručně a zvolte správnou odpověď:
-     //a : true
-     //b : false
-     //c : Error, nespustí se program.
+     // a : true
+     // b : false
+     // c : Error, nespustí se program.
 
       String text = "Hello";
       boolean vysledek = text.equals("hello"); // Tato metoda porovnává řetězce "Hello" a "hello" a zjistí, že jsou odlišné.
-      //vysledek - b
+      // vysledek - b
     }
 }
 
@@ -59,7 +59,7 @@ public class Main {
     // c : Error, nespustí se program.
 
     double vysledek = 10 / 4; // Dělení celých čísel, výsledek je 2 (celé číslo).
-    //vysledek - b
+    // vysledek - b
     }
 }
 
@@ -104,9 +104,9 @@ public class Main {
     public static void main(String[] args) {
 
       // Úkol 5: Délka řetězce Vyhodnoťte výraz ručně:
-        //a : true
-        //b : false
-        //c : Error, nespustí se program.
+        // a : true
+        // b : false
+        // c : Error, nespustí se program.
 
         String text = "Ahoj";
         boolean vysledek = text.length() == 4 && text.charAt(0) == 'A'; // Délka řetězce je 4, první znak je 'A'.
@@ -125,12 +125,12 @@ public class Main {
     public static void main(String[] args) {
 
     //Úkol 6: Modulo operátor Vyhodnoťte výraz ručně:
-        //a : 1
-        //b : 3
-        //c : Error, nespustí se program.
+        // a : 1
+        // b : 3
+        // c : Error, nespustí se program.
 
       int vysledek = 10 % 3; // 10 děleno 3 má zbytek 1.
-      vysledek - a : 1
+      // vysledek - a : 1
      
     }
 }
@@ -146,10 +146,10 @@ public class Main {
     public static void main(String[] args) {
     
     /Úkol 7: Podmíněné přiřazení Vyhodnoťte, co bude uloženo v proměnné vysledek:
-    //a : 5
-    //b : 15
-    //c : 20
-    //d : Error, nespustí se program.
+    // a : 5
+    // b : 15
+    // c : 20
+    // d : Error, nespustí se program.
 
     int x = 5;
     int vysledek = (x > 10) ? 20 : 15; // Podmínka je nepravdivá, takže výsledek bude 15.
