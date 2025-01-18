@@ -3,9 +3,9 @@
 Tento dokument slouží jako příprava na test z programování.
 
 ---
-##  Úkol 1: Vyhodnocení celočíselného dělení
+#  Úkol 1: Vyhodnocení celočíselného dělení
 
-### Kód
+## Kód
 ```java
 
 public class Main {
@@ -23,9 +23,9 @@ public class Main {
 
 ```
 
-## Úkol 2: Porovnání řetězců
+# Úkol 2: Porovnání řetězců
 
-### Kód
+## Kód
 ```java
 
 public class Main {
@@ -44,9 +44,9 @@ public class Main {
 
 ```
 
-## Úkol 3: Výpočet s desetinami
+# Úkol 3: Výpočet s desetinami
 
-### Kód
+## Kód
 ```java
 
 public class Main {
@@ -65,9 +65,9 @@ public class Main {
 
 ```
 
-## Úkol 4: Logický výraz s NOT
+# Úkol 4: Logický výraz s NOT
 
-### Kód
+## Kód
 ```java
 
 public class Main {
@@ -95,9 +95,9 @@ public class Main {
 
 ```
 
-## Úkol 5: Délka řetězce 
+# Úkol 5: Délka řetězce 
 
-### Kód
+## Kód
 ```java
 
 public class Main {
@@ -116,9 +116,9 @@ public class Main {
 
 ```
 
-## Úkol 6: Modulo operátor 
+# Úkol 6: Modulo operátor 
 
-### Kód
+## Kód
 ```java
 
 public class Main {
@@ -137,9 +137,9 @@ public class Main {
 
 ```
 
-## Úkol 7: Podmíněné přiřazení
+# Úkol 7: Podmíněné přiřazení
 
-### Kód
+## Kód
 ```java
 
 public class Main {
@@ -166,9 +166,9 @@ public class Main {
 
 ```
 
-## Úkol 8: Palindrom  
+# Úkol 8: Palindrom  
 
-### Kód
+## Kód
 ```java
 
 public class Main {
@@ -189,9 +189,9 @@ public class Main {
 
 ```
 
-## Úkol 9: Přičítání v cyklu
+# Úkol 9: Přičítání v cyklu
 
-### Kód
+## Kód
 ```java
 
 public class Main {
@@ -213,9 +213,9 @@ public class Main {
 
 ```
 
-## Úkol 10: věření hodnoty proměnné
+# Úkol 10: věření hodnoty proměnné
 
-### Kód
+## Kód
 ```java
 
 public class Main {
