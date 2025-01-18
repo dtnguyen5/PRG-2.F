@@ -335,4 +335,4 @@ public class Main {
 
 ### Kód
 ```java
-// Jaká hra byla napsána v Javě - Minecraft :)
+// Jaká hra byla napsána v Jave - Minecraft :)
