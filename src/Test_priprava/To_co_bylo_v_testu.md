@@ -173,7 +173,7 @@ public class Main {
 
 ```
 
-# Úkol 8: Práce s řetězci v Javě
+## Úkol 8: Práce s řetězci v Javě
 # Kód
 ```java
 public class Main {
