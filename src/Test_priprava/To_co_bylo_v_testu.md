@@ -258,7 +258,7 @@ public class Main {
 
     // TADY TO SCHVALNE PROHODIL TAKZE TO BYLO TAKHLE
 
-    if(x % !2 == 0) {
+    if(x % 2 != 0) {
               System.out.println("x je liché číslo");
           } else {
               System.out.println("x je sudé číslo");
