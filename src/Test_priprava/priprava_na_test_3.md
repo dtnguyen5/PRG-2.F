@@ -95,12 +95,10 @@ public class Main {
     // Doplň zase klasicky do závorek :)
     //Zkontroluj, zda je aktuální čas (hodina hour) v rozmezí 9 až 17:
 
-     if(z > 0) {
-            System.out.println("z je kladné číslo");
-        } else if(z < 0) {
-            System.out.println("z je záporné číslo");
+      if(hour >= 9 && hour <= 17) {
+            System.out.println("Je pracovní doba");
         } else {
-            System.out.println("z je rovno nule");
+            System.out.println("Není pracovní doba");
         }
     }
 }
