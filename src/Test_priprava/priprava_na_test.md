@@ -4,9 +4,9 @@ Tento dokument slouží jako příprava na test z programování.
 
 ---
 
-## ✏️ Úkol 1: Práce se Scannerem
+# ✏️ Úkol 1: Práce se Scannerem
 
-### Kód
+## Kód
 ```java
 import java.util.Scanner;
 
@@ -27,9 +27,9 @@ public class Main {
 }
 ```
 
-## 🧮 Úkol 2: Základní matematické operace
+# 🧮 Úkol 2: Základní matematické operace
 
-### Kód
+## Kód
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -56,8 +56,8 @@ public class Main {
 }
 ```
 
-## Úkol 3: Práce s náhodnými čísly v Javě
-### Kód
+# Úkol 3: Práce s náhodnými čísly v Javě
+## Kód
 ```java
 import java.util.Random;
 
@@ -76,8 +76,8 @@ public class Main {
 }
 ```
 
-## Úkol 4: Použití logické podmínky v Javě - AND = &&, OR = ||, NOT - !
-### Kód
+# Úkol 4: Použití logické podmínky v Javě - AND = &&, OR = ||, NOT - !
+## Kód
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -96,8 +96,8 @@ public class Main {
 
 
 ```
-## Úkol 5: Zjištění, zda je číslo kladné, záporné nebo nula
-### Kód
+# Úkol 5: Zjištění, zda je číslo kladné, záporné nebo nula
+## Kód
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -190,7 +190,7 @@ public class Main {
 ```
 
 # Úkol 10: Práce s řetězci v Javě
-# Kód
+## Kód
 ```java
 public class Main {
     public static void main(String[] args) {
