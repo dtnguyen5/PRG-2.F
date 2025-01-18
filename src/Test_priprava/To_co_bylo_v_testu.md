@@ -44,7 +44,7 @@ public class Main {
         double soucin = a * b;
 
 
-        // Zde bylo, že se nesmí dělit 0, takže doplnit do té a pak ten podíl doplnit 
+        // Zde bylo, že se nesmí dělit 0, takže doplnit do té zavorky a pak ten podíl doplnit 
         double podil = 0; // Výsledek při dělení nulou
         if (b != 0) {
             podil = a / b;
