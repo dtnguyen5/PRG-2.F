@@ -331,7 +331,7 @@ public class Main {
         //c : Error, nespustí se program.
 
       int vysledek = 10 % 3; // 10 děleno 3 má zbytek 1.
-      vysledek - a : 1
+     // vysledek - a : 1
      
     }
 }
