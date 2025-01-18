@@ -207,6 +207,12 @@ public class Main {
 
     double vysledek = 10 / 4; // Dělení celých čísel, výsledek je 2 (celé číslo).
     //vysledek - b
+
+    // Kdyby takhle
+
+    double vysledek = 10.0 / 4;
+    // zde by byl vysledek 2.5
+        
     }
 }
 
