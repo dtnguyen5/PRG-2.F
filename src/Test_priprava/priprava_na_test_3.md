@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Zadání 1: Rozmezí čísel
-        // Doplnění do závorel if("Zde doplň")
+        // Doplnění do závorek if("Zde doplň")
         // Doplň podmínku tak, aby kontrolovala, zda číslo x leží v rozmezí mezi 5 (včetně) a 10 (včetně):
 
         if(x >= 5 && x <= 10) {
