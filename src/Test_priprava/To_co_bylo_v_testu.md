@@ -73,7 +73,7 @@ public class Main {
       Random radnomKostky = new Random();
       int hodnota1 = radnomKostky.nextInt(1, 7);
 
-    // Math.random()?
+    // Math.random():
       int hod = (int) (Math.random() * 6) + 1;
     }
 }
