@@ -213,7 +213,7 @@ public class Main {
 
 ```
 
-## Úkol 10: věření hodnoty proměnné
+## Úkol 10: Ověření hodnoty proměnné
 
 ### Kód
 ```java
