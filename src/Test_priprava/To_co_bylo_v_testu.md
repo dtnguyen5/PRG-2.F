@@ -233,7 +233,7 @@ public class Main {
     // c : Error, nespustí se program.
 
     // boolean vysledek = !(true && false) || (false && true); // Negace (false) nebo (false) = false.
-    // vysledek - b
+    // vysledek - a
 
     // Vysvetlení:
     // 1.Operátor && (logické AND): true && false: Operátor && vrací true, pokud jsou obě podmínky pravdivé. V tomto případě je první podmínka true a druhá false, takže výsledek je false.
