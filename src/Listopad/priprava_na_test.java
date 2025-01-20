@@ -100,13 +100,13 @@ public class priprava_na_test {
         boolean isTrue = !((palindrom.startsWith("()") || palindrom.endsWith(")(")) && palindrom.length() > 4);
 // Výraz vrací true, protože podmínka uvnitř není splněna.
 
-// Úkol 9
-        String test = "Dostanu jedničku.";
+    // Úkol 9
+            String test = "Dostanu jedničku.";
 
-// Metody length(), charAt(), indexOf()
-        System.out.println(test.length()); // Vrací délku řetězce: 18
-        System.out.println(test.charAt(3)); // Vrací znak na indexu 3: "t"
-        System.out.println(test.indexOf("u")); // Vrací index prvního výskytu "u": 7
+    // Metody length(), charAt(), indexOf()
+            System.out.println(test.length()); // Vrací délku řetězce: 18
+            System.out.println(test.charAt(3)); // Vrací znak na indexu 3: "t"
+            System.out.println(test.indexOf("u")); // Vrací index prvního výskytu "u": 7
 
 
 
@@ -139,8 +139,8 @@ public class priprava_na_test {
             System.out.println("x je liché číslo");
         }
 
-        //Zadání 4: Testování hodnoty
-        //Doplň podmínku, která ověří, zda hodnota z je kladná, záporná, nebo rovná nule:
+            //Zadání 4: Testování hodnoty
+            //Doplň podmínku, která ověří, zda hodnota z je kladná, záporná, nebo rovná nule:
 
 
         if(z > 0) {
@@ -230,7 +230,7 @@ public class priprava_na_test {
         }
          */
 
-        //Počítání výskytů: Nechť uživatel zadávaá čísla, dokud nezadá 0. Program by měl spočítat a zobrazit, kolikrát bylo číslo 5 zadáno.
+        //Počítání výskytů: Nechť uživatel zadává čísla, dokud nezadá 0. Program by měl spočítat a zobrazit, kolikrát bylo číslo 5 zadáno.
         /*
             int count = 0;
             int number;
@@ -400,7 +400,7 @@ public class priprava_na_test {
         String palindrom = "())(";
         boolean isTrue = !((palindrom.startsWith("()") || palindrom.endsWith(")(")) && palindrom.length() > 4);
         // Palindrom neodpovídá podmínkám.
-        //Odpověď: a: true
+        //vysledek: a: true
          */
 
         //Úkol 9: Přičítání v cyklu Určete hodnotu proměnné soucet po provedení cyklu:
@@ -414,7 +414,7 @@ public class priprava_na_test {
             soucet += i; // Součet bude 1 + 2 + 3 + 4 + 5 = 15.
         }
          */
-        //Odpověď: b: 15
+        //vysledek: b: 15
 
         //Úkol 10: Ověření hodnoty proměnné Vyhodnoťte, co vytiskne následující program:
         //a : Ano
@@ -429,9 +429,7 @@ public class priprava_na_test {
             System.out.println("Ne");
         }
          */
-        //Odpověď: b: Ano
-
-
+        //Odpověď: A: Ano
 
     }
     }
