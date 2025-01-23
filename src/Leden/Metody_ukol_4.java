@@ -15,7 +15,7 @@ public class Metody_ukol_4 {
             n = n%10 + sumOfDigits(n/10); // Jinak: Součet číslic čísla n = poslední číslice (n % 10) + součet číslic zbývající části (n / 10)
             return n;
         }
-    };
+    }
 
     public static void main(String[] args) {
 
@@ -25,8 +25,10 @@ public class Metody_ukol_4 {
 
             System.out.println("Zadejte číslo: ");
             int cislo = scn.nextInt();
-            System.out.println("Součet číslic čísla" + cislo + " je: " + sumOfDigits(cislo));
+            System.out.println("Součet číslic čísla " + cislo + " je: " + sumOfDigits(cislo));
 
         }
+
+        scn.close();
     }
 }
