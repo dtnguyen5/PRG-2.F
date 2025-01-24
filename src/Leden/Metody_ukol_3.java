@@ -50,7 +50,7 @@ public class Metody_ukol_3 {
 
 
         if (uzivatelskeJmeno.length() <= 5){
-            System.out.println("Uzivatelské jméno je příliš krátké. Přidejte delší znak!");
+            System.out.println("Uzivatelské jméno je příliš krátké. Přidejte další znak!");
         }
         else {
             System.out.println("Vaše uživatelské jméno je v pořádku");
