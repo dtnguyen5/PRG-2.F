@@ -53,6 +53,5 @@ public class Metody_8 {
         double weightedPrumer = weightedAvg(5, 10, 15, 1, 2, 3);
         System.out.println("Vážený průměr: " + weightedPrumer);
 
-
     }
 }
