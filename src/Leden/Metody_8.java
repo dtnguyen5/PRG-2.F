@@ -8,26 +8,26 @@ public class Metody_8 {
 
         Scanner scn = new Scanner(System.in);
 
-        int sum = 0;
-        int count = 0;
+        int suma = 0;
+        int pocet = 0;
 
         System.out.println("Zadejte čísla, dokud nezadáte -1:");
 
         while (true) {
-            int input = scn.nextInt();
+            int vstupOdUzivatele = scn.nextInt();
 
-            if (input == -1) {
+            if (vstupOdUzivatele == -1) {
                 break;
             }
 
-            sum += input;
-            count++;
+            suma += vstupOdUzivatele;
+            pocet++;
         }
 
-        if (count == 0) {
+        if (pocet == 0) {
             return 0;
         }
-        return (double) sum / count;
+        return (double) suma / pocet;
     }
 
     public static double avg(int a, int b, int c) {
@@ -38,6 +38,11 @@ public class Metody_8 {
         return (a * wa + b * wb + c * wc) / (double) (wa + wb + wc);
     }
     public static void main(String[] args) {
+
+        //Průměr
+        //Vytvořte metodu static double avg();, která bude načítat od uživatele celá čísla, dokud nezadá -1. Poté spočítá průměr ze zadaných čísel a vypíše ho.
+        //Metodu zkopírujte a přidejte parametry int a, int b, int c a vypočtěte průměr z nich
+        //Bonus - místo aritmetického průměru, udělejte vážený průměr.
 
         double prumer = avg();
         System.out.println("Průměr zadaných čísel: " + prumer);

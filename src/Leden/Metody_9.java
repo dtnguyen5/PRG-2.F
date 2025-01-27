@@ -12,6 +12,10 @@ public class Metody_9 {
 
     public static void main(String[] args) {
 
+        //3. Výpis
+        //Vytvořte metodu, která vypíše Jméno a věk uživatele.
+        //Metoda bude schopná převzít tyto údaje v libovolném pořadí.
+
         vypis("Pepik", 25);
         vypis(30, "Honza");
 
