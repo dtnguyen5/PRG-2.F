@@ -1,5 +1,6 @@
 package Únor;
 import java.util.Arrays;
+import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -145,6 +146,7 @@ public class arrays_playlist {
         System.out.println(Arrays.toString(songs));
 
         Scanner scn = new Scanner(System.in);
+        scn.useLocale(Locale.US); // misto , tak .
         System.out.println("Zadejte písničku a její hodnocení od 0 do 5");
 
         String novaSonga = scn.nextLine();
