@@ -1,4 +1,5 @@
 package Únor;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -138,20 +139,24 @@ public class arrays_playlist {
 
         // uzivatel zadal novou pisnicku a hodnoceni
 
+
+        int freespace = 100;
+
+        System.out.println(Arrays.toString(songs));
+
         Scanner scn = new Scanner(System.in);
         System.out.println("Zadejte písničku a její hodnocení od 0 do 5");
 
         String novaSonga = scn.nextLine();
         double noveHodnoceni = scn.nextDouble();
 
-        songs[] = novaSonga;
-        ratings[] = noveHodnoceni;
+        songs[freespace] = novaSonga;
+        ratings[freespace] = noveHodnoceni;
+        freespace++;
 
         for (int i = 0; i < songs.length ; i++) {
 
-            if (){
-
-            }
+            System.out.println("Song: " + songs[i] + "hodnocení: " + ratings[i]);
 
         }
 
