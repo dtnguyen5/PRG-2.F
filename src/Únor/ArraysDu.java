@@ -54,6 +54,8 @@ public class ArraysDu {
 
         inventar[inventar.length - 1] = polozka;
         rarity[rarity.length - 1] = rarita;
+
+        serazeniDleAbecedy();
     }
 
     // <---------------------------- Seřazení podle abecedy ---------------------------->
@@ -114,10 +116,10 @@ public class ArraysDu {
 
     public static void main(String[] args) {
 
-        pridaniPolozky("polozka1", 'A');
-        pridaniPolozky("polozka2", 'B');
-        pridaniPolozky("polozka3", 'C');
-        pridaniPolozky("polozka4", 'D');
+        pridaniPolozky("Polozka1", 'A');
+        pridaniPolozky("Polozka2", 'B');
+        pridaniPolozky("Polozka3", 'C');
+        pridaniPolozky("Polozka4", 'D');
 
 
         serazeniDleAbecedy();

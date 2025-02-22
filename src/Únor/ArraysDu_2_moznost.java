@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArraysDu_2_moznost {
 
-    static String[] inventar = {
+    static String[] inventory = {
             "Spitzhacke",
             "Krankenwagen",
             "Apache-Hubschrauber 3000",
@@ -39,104 +39,90 @@ public class ArraysDu_2_moznost {
             "Atom-Schaumbad"
     };
 
-    static char[] rarity = {
-            'C', 'D', 'D', 'D', 'B', 'A', 'D', 'E', 'E', 'E', 'A', 'E', 'D', 'A',
-            'E', 'D', 'A', 'A', 'D', 'A', 'E', 'D', 'E', 'B', 'C', 'C', 'A', 'B',
-            'C', 'C', 'E', 'E'
-    };
+    static char[] rarity = {'C', 'D', 'D', 'D', 'B', 'A', 'D', 'E', 'E', 'E', 'A', 'E', 'D', 'A', 'E', 'D', 'A', 'A', 'D', 'A', 'E', 'D', 'E', 'B', 'C', 'C', 'A', 'B', 'C', 'C', 'E', 'E'};
 
-    // <---------------------------- Přidání položky do inventáře ---------------------------->
+    static void pridatPolozku(String polozka, char rarita) {
+        inventory = Arrays.copyOf(inventory, inventory.length + 1);
+        inventory[inventory.length - 1] = polozka;
 
-    static void pridaniPolozky(String polozka, char rarita) {
-
-        inventar = Arrays.copyOf(inventar, inventar.length + 1);
         rarity = Arrays.copyOf(rarity, rarity.length + 1);
-
-        inventar[inventar.length - 1] = polozka;
         rarity[rarity.length - 1] = rarita;
     }
 
-    // <---------------------------- Seřazení podle abecedy ---------------------------->
+    static void seraditPodleAbecedy() {
+        boolean swap;
 
-    static void serazeniDleAbecedy() {
-        boolean swapped;
-        int n = inventar.length;
         do {
-            swapped = false;
-            int i = 0;
-            while (i < n - 1) {
-                if (inventar[i].charAt(0) > inventar[i + 1].charAt(0)) {
-                    // Prohození položek v inventáři
-                    String temp = inventar[i];
-                    inventar[i] = inventar[i + 1];
-                    inventar[i + 1] = temp;
+            swap = false;
+            for (int i = 0; i < inventory.length - 1; i++) {
+                if (inventory[i].compareTo(inventory[i + 1]) > 0) {
+                    String tmp = inventory[i];
+                    inventory[i] = inventory[i + 1];
+                    inventory[i + 1] = tmp;
 
-                    // Prohození rarity
-                    char tempR = rarity[i];
+                    char tmp2 = rarity[i];
                     rarity[i] = rarity[i + 1];
-                    rarity[i + 1] = tempR;
+                    rarity[i + 1] = tmp2;
 
-                    swapped = true;
+                    swap = true;
+
                 }
-                i++;
             }
-            n--; // Poslední prvek už je správně umístěný, nemusíme ho kontrolovat
-        } while (swapped);
+        } while (swap);
     }
 
-    // <---------------------------- Seřazení podle rarity ---------------------------->
-
-    static void serazeniPodleRarity() {
-        boolean swapped;
-        int n = rarity.length;
+    static void seraditPodleRarity() {
+        boolean swap;
         do {
-            swapped = false;
-            int i = 0;
-            while (i < n - 1) {
-                if (rarity[i] > rarity[i + 1] ||
-                        (rarity[i] == rarity[i + 1] && inventar[i].charAt(0) > inventar[i + 1].charAt(0))) {
+            swap = false;
 
-                    // Prohození rarity
-                    char tempR = rarity[i];
+            for (int i = 0; i < rarity.length - 1; i++) {
+                if (rarity[i] > rarity[i + 1]) {
+                    String tmp = inventory[i];
+                    inventory[i] = inventory[i + 1];
+                    inventory[i + 1] = tmp;
+
+                    char tmp2 = rarity[i];
                     rarity[i] = rarity[i + 1];
-                    rarity[i + 1] = tempR;
+                    rarity[i + 1] = tmp2;
 
-                    // Prohození položek v inventáři
-                    String temp = inventar[i];
-                    inventar[i] = inventar[i + 1];
-                    inventar[i + 1] = temp;
+                    swap = true;
+                } else if (rarity[i] == rarity[i + 1]) {
+                    if (inventory[i].compareTo(inventory[i + 1]) > 0) {
 
-                    swapped = true;
+                        String tmp = inventory[i];
+                        inventory[i] = inventory[i + 1];
+                        inventory[i + 1] = tmp;
+
+                        char tmp2 = rarity[i];
+                        rarity[i] = rarity[i + 1];
+                        rarity[i + 1] = tmp2;
+
+                        swap = true;
+                    }
                 }
-                i++;
             }
-            n--;
-        } while (swapped);
-    }
 
-    // <---------------------------- Vypsání inventáře ---------------------------->
-
-    static void vypisInventar() {
-
-        for (int i = 0; i < inventar.length; i++) {
-            System.out.println(rarity[i] + " - " + inventar[i]);
-        }
-        System.out.println();
+        } while (swap);
     }
 
     public static void main(String[] args) {
+        pridatPolozku("Item1", 'A');
+        pridatPolozku("Item2", 'B');
+        pridatPolozku("Item3", 'C');
+        pridatPolozku("Item4", 'D');
 
-        pridaniPolozky("polozka1", 'A');
-        pridaniPolozky("polozka2", 'B');
-        pridaniPolozky("polozka3", 'C');
-        pridaniPolozky("polozka4", 'D');
+        seraditPodleAbecedy();
 
+        for (int i = 0; i < inventory.length; i++) {
+            System.out.println(rarity[i] + " - " + inventory[i]);
+        }
 
-        serazeniDleAbecedy();
-        vypisInventar();
+        seraditPodleRarity();
 
-        serazeniPodleRarity();
-        vypisInventar();
+        for (int i = 0; i < inventory.length; i++) {
+            System.out.println(rarity[i] + " - " + inventory[i]);
+        }
     }
 }
 
