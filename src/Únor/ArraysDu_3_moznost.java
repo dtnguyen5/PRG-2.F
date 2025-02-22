@@ -121,10 +121,10 @@ public class ArraysDu_3_moznost {
 
     public static void main(String[] args) {
 
-        pridaniPolozky("polozka1", 'A');
-        pridaniPolozky("polozka2", 'B');
-        pridaniPolozky("polozka3", 'C');
-        pridaniPolozky("polozka4", 'D');
+        pridaniPolozky("Polozka1", 'A');
+        pridaniPolozky("Polozka2", 'B');
+        pridaniPolozky("Polozka3", 'C');
+        pridaniPolozky("Polozka4", 'D');
 
 
         serazeniDleAbecedy();
