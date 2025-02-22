@@ -173,11 +173,11 @@ public class ArraysDu_vysvetleni {
     }
 
     public static void main(String[] args) {
-        // tady si to prejmenuj nevim treba kocka1, kocka2 atd.. nebo cokoliv jineho misto tech polozek protoze jsem to takhle napsal jas
-        pridavaniPolozky("item1", 'A');
-        pridavaniPolozky("item2", 'B');
-        pridavaniPolozky("item3", 'C');
-        pridavaniPolozky("item4", 'D');
+        // tady si to prejmenuj nevim treba Kocka1, Kocka2, ALE VELKYM PISMENEM NA ZACATKU!!!! JINAK SE TI TY POLOZKY DAJI NAKONEC A PAK BY SES ME NA TO PTALA nebo cokoliv jineho misto tech polozek protoze jsem to takhle napsal jas
+        pridavaniPolozky("Polozka1", 'A');
+        pridavaniPolozky("Polozka2", 'B');
+        pridavaniPolozky("Polozka3", 'C');
+        pridavaniPolozky("Polozka4", 'D');
 
         serazeniPodleAbecedy();
         vypis();
@@ -192,5 +192,6 @@ public class ArraysDu_vysvetleni {
 // metody si asi nemusis prejmenovat, ale jestli to delas ze serazeniPodleAbecedy nebo serazenipodleabecedy nevim jak to delas
 // to n-- myslim ze neni nutné ani, takze to muzes dat do haje, ale muzes to zkusit to jsem tam dal, aby to bylo rychlejsi
 // promenne si klidne muzes prejmenovat jak chces, ale nemusis, podle toho jestli se ti to libi
+// snad to pochopis a tohle uz nechci videt
 
 
