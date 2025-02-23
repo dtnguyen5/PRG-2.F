@@ -55,7 +55,6 @@ public class ArraysDu {
         inventar[inventar.length - 1] = polozka;
         rarity[rarity.length - 1] = rarita;
 
-        serazeniDleAbecedy();
     }
 
     // <---------------------------- Seřazení podle abecedy ---------------------------->
