@@ -47,7 +47,7 @@ public class ArraysDu {
 
     // <---------------------------- Přidání položky do inventáře ---------------------------->
 
-    static void pridaniPolozky(String polozka, char rarita) {
+    private static void pridaniPolozky(String polozka, char rarita) {
 
         inventar = Arrays.copyOf(inventar, inventar.length + 1);
         rarity = Arrays.copyOf(rarity, rarity.length + 1);
@@ -59,8 +59,10 @@ public class ArraysDu {
 
     // <---------------------------- Seřazení podle abecedy ---------------------------->
 
-    static void serazeniDleAbecedy() {
+    private static void serazeniDleAbecedy() {
 
+        // <---------------------------- Původní kód podle seřazení podle charAt mi nefunguje, protože mi to porovnává jenom první znak řetězce ---------------------------->
+        /*
         for (int i = 0; i < inventar.length - 1; i++) {
 
             for (int j = 0; j < inventar.length - 1 - i; j++) {
@@ -78,11 +80,32 @@ public class ArraysDu {
                 }
             }
         }
+         */
+
+        // <---------------------------- Nový kód ---------------------------->
+
+        for (int i = 0; i < inventar.length - 1; i++) {
+
+            for (int j = 0; j < inventar.length - 1 - i; j++) {
+
+                if (inventar[j].compareTo(inventar[j + 1]) > 0) {
+
+                    String temp = inventar[j];
+                    inventar[j] = inventar[j + 1];
+                    inventar[j + 1] = temp;
+
+
+                    char tempR = rarity[j];
+                    rarity[j] = rarity[j + 1];
+                    rarity[j + 1] = tempR;
+                }
+            }
+        }
     }
 
     // <---------------------------- Seřazení podle rarity ---------------------------->
 
-    static void serazeniPodleRarity() {
+    private static void serazeniPodleRarity() {
 
         for (int i = 0; i < rarity.length - 1; i++) {
 
@@ -105,25 +128,26 @@ public class ArraysDu {
 
     // <---------------------------- Vypsání inventáře ---------------------------->
 
-    static void vypisInventar() {
+    private static void vypisInventar() {
 
         for (int i = 0; i < inventar.length; i++) {
-            System.out.println(rarity[i] + " - " + inventar[i]);
+            System.out.println("{ " + rarity[i] + " } - " + inventar[i]);
         }
         System.out.println();
     }
 
     public static void main(String[] args) {
 
-        pridaniPolozky("Polozka1", 'A');
-        pridaniPolozky("Polozka2", 'B');
-        pridaniPolozky("Polozka3", 'C');
-        pridaniPolozky("Polozka4", 'D');
+        pridaniPolozky("Zeitschleifen-Tasche", 'C');
+        pridaniPolozky("Schwebende Tasse Tee", 'A');
+        pridaniPolozky("Luftgitarre", 'D');
+        pridaniPolozky("Super USB-Kabel", 'B');
 
-
+        System.out.println("Výpis podle abecedy:");
         serazeniDleAbecedy();
         vypisInventar();
 
+        System.out.println("Výpis podle rarity");
         serazeniPodleRarity();
         vypisInventar();
     }
