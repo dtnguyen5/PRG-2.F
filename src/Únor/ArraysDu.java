@@ -107,6 +107,8 @@ public class ArraysDu {
 
     private static void serazeniPodleRarity() {
 
+        // <---------------------------- Původní kód podle seřazení podle charAt mi nefunguje, protože mi to porovnává jenom první znak řetězce ---------------------------->
+        /*
         for (int i = 0; i < rarity.length - 1; i++) {
 
             for (int j = 0; j < rarity.length - 1 - i; j++) {
@@ -124,6 +126,31 @@ public class ArraysDu {
                 }
             }
         }
+
+         */
+
+        // <---------------------------- Nový kód---------------------------->
+
+        for (int i = 0; i < rarity.length - 1; i++) {
+
+            for (int j = 0; j < rarity.length - 1 - i; j++) {
+
+                if (rarity[j] > rarity[j + 1] || (rarity[j] == rarity[j + 1] && inventar[j].compareTo(inventar[j + 1]) > 0)) {
+
+                    char tempR = rarity[j];
+                    rarity[j] = rarity[j + 1];
+                    rarity[j + 1] = tempR;
+
+
+                    String temp = inventar[j];
+                    inventar[j] = inventar[j + 1];
+                    inventar[j + 1] = temp;
+                }
+            }
+        }
+
+
+
     }
 
     // <---------------------------- Vypsání inventáře ---------------------------->

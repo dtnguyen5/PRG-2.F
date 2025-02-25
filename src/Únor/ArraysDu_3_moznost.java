@@ -64,7 +64,7 @@ public class ArraysDu_3_moznost {
         do {
             swapped = false;
             for (int i = 0; i < n - 1; i++) {
-                if (inventar[i].charAt(0) > inventar[i + 1].charAt(0)) {
+                if (inventar[i].compareTo(inventar[i + 1]) > 0) {
                     // Prohození položek v inventáři
                     String temp = inventar[i];
                     inventar[i] = inventar[i + 1];
