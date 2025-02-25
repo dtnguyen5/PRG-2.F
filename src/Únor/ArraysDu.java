@@ -174,7 +174,7 @@ public class ArraysDu {
         serazeniDleAbecedy();
         vypisInventar();
 
-        System.out.println("Výpis podle rarity");
+        System.out.println("Výpis podle rarity:");
         serazeniPodleRarity();
         vypisInventar();
     }
