@@ -49,6 +49,13 @@ public class linkedlist {
         return true;
     }
 
+    public void print(){
+
+        System.out.println("Linked list: ");
+
+
+    }
+
     public boolean remove(int value){
 
         ListItem previous = null;
