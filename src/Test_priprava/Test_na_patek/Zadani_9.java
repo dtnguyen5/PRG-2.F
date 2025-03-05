@@ -6,17 +6,21 @@ public class Zadani_9 {
 
     private static int[] filtracePoleSudychCisel(int[] pole){
 
-        int [] sudaCisla = new int[pole.length];
+        int [] sudaCisla = new int[pole.length]; // // Pole pro uchování sudých čísel
         int index = 0; // Pomocná proměnná pro přidávání do nového pole
 
         for (int i = 0; i < pole.length ; i++) {
 
+            // // Kontrola, zda je číslo sudé
             if (pole[i] % 2 == 0){
-                sudaCisla[index++] = pole[i]; // Přidávání sudého čísla do nového pole
+                // Pokud je číslo sudé, přidáme ho do nového pole
+                sudaCisla[index++] = pole[i]; // Uložíme do pole a zvýšíme index pro další číslo
             }
 
         }
-        return Arrays.copyOf(sudaCisla, index);
+        return Arrays.copyOf(sudaCisla, index); // Zkrácení pole na správnou velikost, ytvoříme nové pole, které bude mít velikost přesně odpovídající počtu sudých čísel. index obsahuje počet přidaných sudých čísel.
+        // index -  Určuje, jak velká má být nová kopie pole. Tato hodnota znamená, že kopie bude mít přesně tolik prvků, kolik jsme uložili do pole sudaCisla
+
     }
 
     public static void main(String[] args) {
