@@ -1,7 +1,7 @@
 package algprg;
 
 import java.util.List;
-
+/*
 public class linkedlist {
 
     ListItem first;
@@ -82,3 +82,5 @@ public class linkedlist {
     }
 
 }
+
+ */
