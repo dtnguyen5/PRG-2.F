@@ -35,6 +35,10 @@ public class Zadani_6 {
 
     public static void main(String[] args) {
 
+
+        //Příklad 6: Výpočet Fibonacciho čísla pomocí rekurze
+        //Napište metodu, která vypočítá n-té Fibonacciho číslo pomocí rekurze.
+
         Scanner scn = new Scanner(System.in);
 
         // Jednodussi zpusob

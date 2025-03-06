@@ -30,6 +30,9 @@ public class Zadani_8 {
 
     public static void main(String[] args) {
 
+        // říklad 8: Zdvojnásobení hodnot v poli
+        //Vytvořte metodu, která zdvojnásobí každý prvek v poli a vrátí nové pole s upravenými hodnotami.
+
         // Prvni moznost
         int [] pole = {1, 2, 3, 4, 5};
         System.out.println("Původní pole: " + Arrays.toString(pole));

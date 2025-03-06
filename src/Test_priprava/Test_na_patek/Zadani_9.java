@@ -18,12 +18,15 @@ public class Zadani_9 {
             }
 
         }
-        return Arrays.copyOf(sudaCisla, index); // Zkrácení pole na správnou velikost, ytvoříme nové pole, které bude mít velikost přesně odpovídající počtu sudých čísel. index obsahuje počet přidaných sudých čísel.
+        return Arrays.copyOf(sudaCisla, index); // Zkrácení pole na správnou velikost, vytvoříme nové pole, které bude mít velikost přesně odpovídající počtu sudých čísel. index obsahuje počet přidaných sudých čísel.
         // index -  Určuje, jak velká má být nová kopie pole. Tato hodnota znamená, že kopie bude mít přesně tolik prvků, kolik jsme uložili do pole sudaCisla
 
     }
 
     public static void main(String[] args) {
+
+        // Příklad 9: Filtrace pole – vrácení pouze sudých čísel
+        //Napište metodu, která z daného pole vyfiltruje pouze sudá čísla a vrátí nové pole obsahující tyto hodnoty.
 
         int[] pole = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         System.out.println("Původní pole: " + Arrays.toString(pole));
