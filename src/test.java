@@ -54,6 +54,28 @@ public class test {
 
         // 2. Metoda swap pro pole celých čísel
 
+        // Varianta A: Převod na záporné číslo
+        //Metoda pro převod jednoho čísla na záporné.
+        //
+        //Vstup: Reálné (double) číslo
+        //Výstup: Záporná hodnota tohoto čísla
+        //Metoda swap(arr, pozice1, pozice2), která vymění dva prvky v poli.
+        //
+        //Přetížení pro pole celých čísel (int[]) a reálných čísel (double[])
+        //Metoda, která projde pole reálných čísel a převede všechny prvky v poli na záporné.
+
+
+
+        // Varianta 2: Druhá mocnina
+        //Metoda pro převedení čísla na druhou mocninu.
+        //Vstup: Reálné (double) číslo
+        //
+        //Výstup: Číslo umocněné na 2
+        //
+        //Metoda swap(arr, pozice1, pozice2), která vymění dva prvky v poli.
+        //Přetížení pro pole celých čísel (int[]) a reálných čísel (double[])
+        //Metoda, která projde pole a převede všechny prvky na druhou mocninu.
+
 
     }
 }
