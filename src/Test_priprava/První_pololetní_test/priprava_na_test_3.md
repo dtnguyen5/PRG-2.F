@@ -1,6 +1,6 @@
-# Příprava na test - další zkušební příklady
+# Příprava na Testy.test - další zkušební příklady
 
-Tento dokument slouží jako příprava na test z programování.
+Tento dokument slouží jako příprava na Testy.test z programování.
 
 ---
 

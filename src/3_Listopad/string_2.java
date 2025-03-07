@@ -43,19 +43,19 @@ public class string_2 {
         //String je neměnná proměnná
 
         {
-            boolean case1 = new String("test").equals("test"); // true
+            boolean case1 = new String("Testy.test").equals("Testy.test"); // true
 
-            // new String("test") a "test" jsou rozdílné objekty. == porovnává, jestli jsou to stejný objekty
-            boolean case2 = new String("test") == "test"; // false
+            // new String("Testy.test") a "Testy.test" jsou rozdílné objekty. == porovnává, jestli jsou to stejný objekty
+            boolean case2 = new String("Testy.test") == "Testy.test"; // false
 
             // stejně jako case2
-            boolean case3 = new String("test") == new String("test"); // false
+            boolean case3 = new String("Testy.test") == new String("Testy.test"); // false
 
             // jedná se o tzv. "literály" a to jsou vždy stejné objekty
-            boolean case4 = "test" == "test"; // true
+            boolean case4 = "Testy.test" == "Testy.test"; // true
 
             // literály "te" a "st" se spojí v jeden a odkazuje se poté na jeden a ten samý objekt
-            boolean case5 = "test" == "te" + "st"; // true
+            boolean case5 = "Testy.test" == "te" + "st"; // true
         } //Porovnávání
 
         // pro jednoduchost používejte u řetězců místo ==, equals()

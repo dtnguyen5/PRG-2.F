@@ -1,6 +1,6 @@
-# Příprava na test
+# Příprava na Testy.test
 
-Tento dokument slouží jako příprava na test z programování.
+Tento dokument slouží jako příprava na Testy.test z programování.
 
 ---
 
@@ -195,13 +195,13 @@ public class Main {
 public class Main {
     public static void main(String[] args) {
 
-    String test = "Dostanu jedničku.";
+    String Testy.test = "Dostanu jedničku.";
     
     // Metody length(), charAt(), indexOf(), trim(), subString(), toUpperCase, toLowerCase
-    // zde bylo jenom zadání, které metody slouží k čemu, takže stačilo doplnit např. test.toLowerCase
-    System.out.println(test.length()); // Vrací délku řetězce: 18
-    System.out.println(test.charAt(3)); // Vrací znak na indexu 3: "t"
-    System.out.println(test.indexOf("u")); // Vrací index prvního výskytu "u": 7
+    // zde bylo jenom zadání, které metody slouží k čemu, takže stačilo doplnit např. Testy.test.toLowerCase
+    System.out.println(Testy.test.length()); // Vrací délku řetězce: 18
+    System.out.println(Testy.test.charAt(3)); // Vrací znak na indexu 3: "t"
+    System.out.println(Testy.test.indexOf("u")); // Vrací index prvního výskytu "u": 7
     }
 }
 

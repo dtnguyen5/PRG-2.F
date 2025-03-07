@@ -1,6 +1,6 @@
-# Příprava na test 
+# Příprava na Testy.test 
 
-Tento dokument slouží jako příprava na test z programování.
+Tento dokument slouží jako příprava na Testy.test z programování.
 
 ---
 ##  Úkol 1: Vyhodnocení celočíselného dělení
