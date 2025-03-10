@@ -75,7 +75,7 @@ Hodnota primitivního typu je přímo uložena v paměti, takže když napříkl
 ### 2. Referenční
 
 - odkazují na objekty v paměti.
-- **Příklady**: Třídy, objekty, pole, rozhraní, např. `String`, `ArrayList`, uživatelsky definované objekty (třídy).
+- **Příklady**: Třídy, objekty, pole, rozhraní, např. `String`, `Březen.ArrayList`, uživatelsky definované objekty (třídy).
 - **Jak fungují?** U referenčních typů proměnná neukládá přímo hodnotu, ale odkaz (adresu) na místo v paměti, kde je uložen skutečný objekt. Například když deklarujete `String str = "Ahoj";`, proměnná str neukládá samotný text "Ahoj", ale adresu, kde je tento řetězec uložen v paměti.
 #### 2.1 Vlastnosti:
 - Neexistuje pevná velikost, závisí na objektu.

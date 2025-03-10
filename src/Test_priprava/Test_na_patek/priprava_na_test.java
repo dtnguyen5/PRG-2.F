@@ -53,8 +53,10 @@ public class priprava_na_test {
         return n * fackTorialRekurzivne(n - 1);
     }
 
+
     public static void main(String[] args) {
 
+        // první cviceni
         System.out.println(soucetCisel(1, 1));
 
         // druhe cviceni
