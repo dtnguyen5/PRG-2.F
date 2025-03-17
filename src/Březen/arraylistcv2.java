@@ -23,7 +23,7 @@ public class arraylistcv2 {
             ukoly.add(ukol);
         }
 
-        
+
         System.out.println("Seznam úkolů");
 
         for (int i = 0; i < ukoly.size(); i++) {
