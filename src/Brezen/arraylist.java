@@ -1,10 +1,12 @@
+package Brezen;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class arraylist {
     public static void main(String[] args) {
 
         // Arraylist - dynamické vytvoření pole, má určenou velikost - není pevně stanovena velikost
-
 
         ArrayList<String> auta = new ArrayList<>();
 
