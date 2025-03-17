@@ -1,7 +1,6 @@
-package Brezen;
+package Březen;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class arraylist {
     public static void main(String[] args) {
