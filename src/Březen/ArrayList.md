@@ -1,119 +1,262 @@
-## ArrayList úkoly
+# ArrayList v Javě
 
-### 1) Evidence objednávek pro rozvoz jídla
-
-**Popis:**
-
-Představte si, že pracujete jako dispečer rozvozu jídla. Potřebujete ukládat seznam objednávek (například názvy jídel
-nebo jejich čísla) a průběžně je zpracovávat.
-
-1. Vytvořte `ArrayList<String>` pro uložení názvů objednaných jídel.
-
-2. Z konzole načítejte názvy jídel tak dlouho, dokud uživatel nenapíše `konec`.
-
-3. Po zadání `konec` vypište všechny uložené objednávky a zároveň vypište jejich počet.
-
-4. Vypište uživateli dotaz, zda některou objednávku nechce zrušit. Pokud ano, zadejte název objednávky a smažte ji ze
-   seznamu (pokud tam existuje).
-
-5. Na konci znovu vypište upravený seznam objednávek.
-
-- `Svíčková na smetaně – Restaurace U Koláře`
-- `Guláš s knedlíkem – Hospoda Na Růžku`
-- `Pečená kachna se zelím – Hostinec U Vopičky`
-- `Grilovaný hermelín s brusinkami – Bistro Na Křižovatce`
-- `Koprová omáčka s hovězím – Jídelna U Tří lvů`
-- `Špagety Carbonara – Pizzerie Bella Italia`
-- `Kuřecí řízek s bramborovým salátem – Restaurace Na Zahrádce`
-- `Vepřo knedlo zelo – Hospůdka U Dvou koček`
-- `Kuřecí Kung Pao s rýží – Asijská restaurace So Long`
-- `Smažený sýr s hranolkami – Bistro Na rohu`
+- `ArrayList` v Javě je dynamická datová struktura, která umožňuje ukládat prvky v podobě seznamu a podle potřeby měnit jeho velikost. 
+- Na rozdíl od pole (`Array`) není u `ArrayList` pevně stanovena velikost – při přidávání prvků se automaticky zvětšuje a naopak při mazání zmenšuje.
 
 ---
 
-### 2) Správa kontaktů v (jednoduchém) telefonním seznamu
 
-**Popis:**
+## Deklarace a Vytvoření `ArrayList`
+- Import třídy `ArrayList`
+- Třída `ArrayList` se nachází v balíčku `java.util`, proto je nutné provést import:
 
-Máte kontakty na své známé a přátele. Chcete si je ukládat do seznamu, zobrazovat a případně je mazat.
 
-1. Vytvořte `ArrayList<String>` pro jména nebo celé záznamy kontaktů (můžete zjednodušeně uchovávat jen jméno, nebo
-   „Jméno – Telefonní číslo“).
+```java
+import java.util.ArrayList;
+```
 
-2. Nabídněte uživateli několik voleb:
+### Deklarace
 
-- Přidat nový kontakt,
 
-- Vypsat všechny kontakty,
+- Pro vytvoření `ArrayList` je třeba použít generické typy (tzv. *generics*), které udávají datový typ uložených prvků.
 
-- Smazat kontakt dle jména,
+- Značí se pomocí `<>` za slovem `ArrayList`.
 
-- Konec programu.
+**Příklad:**
 
-3. V programu tedy průběžně vyhodnocujte, co uživatel zvolil, a podle toho se `ArrayList` upraví (přidáte, zobrazíte,
-   smažete).
 
-4. Při smazání kontaktu se uživatele zeptejte na přesný text jména. Pokud v seznamu bude, smažte ho.
+```java
+ArrayList<String> slova;
+ArrayList<Integer> cisla; // nelze napsat int do <>
+```
+
+
+### Inicializace (vytvoření instance)
+
+
+- Pomocí klíčového slova `new` vytvoříme nový `ArrayList`.
+
+**Příklad:**
+
+
+```java
+ArrayList<String> slova = new ArrayList<>();
+ArrayList<Integer> cisla = new ArrayList<>();
+```
+
+
+> **Poznámka:**  Od Javy 7 lze v ostrých závorkách `< >` při vytváření ArrayListu vynechat typ (tzv. *diamond operator*). Kompilátor jej určí automaticky.
+---
+
+Přidávání prvků do `ArrayList`
+Metoda `add()`
+
+- Pro vložení nového prvku do `ArrayList` použijeme metodu `add()`.
+
+- Vložený prvek **musí** odpovídat datovému typu, který jsme zadali při deklaraci.
+
+**Příklad:**
+
+
+```java
+ArrayList<String> slova = new ArrayList<>();
+slova.add("Ahoj");
+slova.add("Svět");
+slova.add("Java");
+```
+
+### Přidání s určením indexu
+
+- Lze také zadat index, na který se nový prvek vloží. Ostatní prvky se posunou.
+
+**Příklad:**
+
+```java
+slova.add(1, "Programování");
+// Nyní bude "Programování" na indexu 1
+```
 
 ---
 
-### 3) Seznam úkolů (to-do list)
+Přístup k prvkům `ArrayList`
+Metoda `get()`
 
-**Popis:**
+- Pro získání hodnoty na určitém indexu použijeme metodu `get(index)`.
 
-Vytvořte malou aplikaci, která simuluje to-do list, do kterého si člověk ukládá úkoly a spravuje je.
+**Příklad:**
 
-1. Vytvořte `ArrayList<String>` pro uložení úkolů.
+```java
+ArrayList<String> slova = new ArrayList<>();
+slova.add("Ahoj");
+slova.add("Svět");
 
-2. Uživatel může opakovaně vkládat nový úkol, dokud nezadá klíčové slovo (např. `-1`), které značí ukončení zadávání.
+String prvniSlovo = slova.get(0); 
+System.out.println(prvniSlovo); // Výstup: Ahoj
+```
 
-3. Po zadání klíčového slova vypište celý seznam úkolů.
+Metoda `set()`
 
-4. Následně se zeptejte, zda chce uživatel nějaký úkol označit za splněný. Pokud ano, vyžádejte si index nebo přesný
-   text úkolu a odeberte ho ze seznamu.
+- Pro změnu prvku na určitém indexu použijeme metodu `set(index, novaHodnota)`.
 
-5. Po odebrání splněného úkolu vypište znovu celý seznam, abyste viděli aktuální stav.
+**Příklad:**
 
----
 
-### 4) Jednoduchý pokladní systém (var. se vstupem cen)
-
-**Popis:**
-
-Tato úloha se podobá příkladu s vkládáním cen nákupu, ale místo pole použijte `ArrayList<Integer>`.
-
-1. Vytvořte `ArrayList<Integer>`, kam budete ukládat ceny položek nákupu.
-
-2. Uživatel postupně zadává cenu každé položky; zadáním čísla `-1` ukončí nákup.
-
-3. Po ukončení vypište všechny zadané ceny.
-
-4. Současně spočítejte a vypište součet všech cen (celkovou útratu).
-
-5. Volitelně: Zeptejte se, zda chce uživatel odstranit některou položku ze seznamu (třeba pokud se spletla obsluha), a
-    následně ji odstraňte na základě indexu nebo konkrétní zadané hodnoty.
+```java
+slova.set(1, "Všichni");
+System.out.println(slova.get(1)); // Výstup: Všichni
+```
 
 ---
 
-### 5) Evidence bodů ze soutěže
+Odstraňování prvků z `ArrayList`
+Metoda `remove()`
 
-**Popis:**
+- Pro odstranění prvku můžeme použít metodu `remove()` buď s indexem, nebo přímo s objektovou hodnotou.
 
-Představte si, že organizujete sportovní soutěž. Účastníci postupně získávají body, jak plní různé disciplíny.
+**Příklad – odstranění podle indexu:**
 
-1. Vytvořte `ArrayList<Integer>` pro uložení získaných bodů.
+```java
+ArrayList<String> slova = new ArrayList<>();
+slova.add("Ahoj");
+slova.add("Svět");
+slova.add("Java");
 
-2. V cyklu načítejte počet bodů každého účastníka (může jich být neomezeně). Uživatel vždy zadá bodové ohodnocení a vy
-   je přidáte do seznamu. Zadání ukončíte třeba slovem `stop`.
+slova.remove(1); 
+// Odstraní prvek na indexu 1 ("Svět")
+```
 
-3. Po ukončení zadávání bodů:
+**Příklad – odstranění podle hodnoty:**
 
-- Vypište celý seznam bodů,
 
-- Spočítejte a vypište průměr bodů (abychom věděli, jak byla disciplína obtížná nebo jednoduchá).
+```java
+slova.remove("Java"); 
+// Pokusí se odstranit "Java", pokud existuje v seznamu
+```
 
-- Najděte a vypište maximální počet bodů.
+---
+Velikost `ArrayList`
+Metoda `size()`
 
-4. Volitelně nechte uživatele vyřadit chybný záznam (například pokud se někdo přepsal) — zadejte index bodu, který se má
-   odstranit.
+- K získání velikosti (počtu prvků) slouží metoda `size()`.
+- Na rozdíl od polí (kde používáme `length`) je zde nutné volat metodu.
 
+**Příklad:**
+
+
+```java
+System.out.println("Počet prvků: " + slova.size());
+```
+---
+
+
+Procházení `ArrayList`
+Pomocí `for` cyklu
+
+- Podobně jako u polí můžeme využít klasický `for` cyklus, ale voláme `size()` namísto `length`.
+
+**Příklad:**
+
+```java
+for (int i = 0; i < slova.size(); i++) {
+    System.out.println("Prvek na indexu " + i + ": " + slova.get(i));
+}
+```
+
+Pomocí rozšířeného `for` cyklu (*for-each*)
+- Rozšířený cyklus `for` je jednoduchý a pohodlný pro procházení všech prvků.
+**Příklad:**
+
+
+```java
+for (String slovo : slova) {
+    System.out.println("Hodnota: " + slovo);
+}
+```
+
+---
+
+
+Třídění `ArrayList`
+Pomocí `Collections.sort()`
+
+- Pro setřídění prvků využijeme třídu `Collections` a její metodu `sort()`.
+
+**Příklad:**
+
+```java
+import java.util.ArrayList;
+import java.util.Collections;
+
+ArrayList<Integer> cisla = new ArrayList<>();
+cisla.add(5);
+cisla.add(3);
+cisla.add(8);
+cisla.add(1);
+
+Collections.sort(cisla);
+System.out.println(cisla); // Výstup: [1, 3, 5, 8]
+```
+
+- K dispozici je také `Collections.reverse()` pro seřazení v opačném pořadí či `Collections.sort()` s vlastním komparátorem (Podrobněji na zaměření).
+---
+
+Převod mezi polem a `ArrayList`
+
+1. **Pole -> `ArrayList`**
+
+```java
+String[] pole = {"Ahoj", "Svět"};
+ArrayList<String> list = new ArrayList<>(Arrays.asList(pole));
+```
+
+2. **`ArrayList` -> Pole**
+
+```java
+String[] novePole = list.toArray(new String[0]);
+// Pro primitivní typy (int, double, ...) postup komplikuje autoboxing/unboxing
+```
+
+---
+
+
+### Rozdíly mezi `Array` a `ArrayList`
+
+1. **Velikost:**
+
+- `Array` má pevnou velikost danou při inicializaci.
+
+- `ArrayList` se dokáže dynamicky zvětšovat nebo zmenšovat.
+
+2. **Přístup k prvkům:**
+
+- `Array` používá k přístupu [] a indexy a má vlastnost `.length`.
+
+- `ArrayList` používá metody `get(index)` a `size()`.
+
+3. **Metody pro manipulaci:**
+
+- `Array` umožňuje pouze přímou manipulaci s indexy.
+
+- `ArrayList` nabízí řadu užitečných metod (`add()`, `remove()`, `clear()`, `contains()`, …).
+
+4. **Typ elementů:**
+
+- `Array` může obsahovat jak primitivní datové typy (`int`, `double`, …), tak objekty.
+
+- `ArrayList` může přímo uchovávat jen objekty (např. `Integer`, `Double`), pro primitivní typy dochází k *autoboxingu* (převod `int` -> `Integer`).
+
+---
+
+## Shrnutí
+
+1. **`ArrayList`**  je dynamická datová struktura, která umožňuje přidávat a mazat prvky bez nutnosti starat se o kapacitu.
+
+2. K **přístupu k prvkům**  slouží metody `get()` a `set()`, velikost lze zjistit pomocí `size()`.
+
+3. Pro **iteraci**  lze využít klasický `for`, rozšířený *for-each* cyklus nebo `Iterator`.
+
+4. K **třídění**  slouží `Collections.sort()`.
+
+5. Při práci s **primitivními typy**  v `ArrayList` probíhá *autoboxing* a *unboxing*.
+
+6. **`ArrayList`**  je vhodný v případech, kdy potřebujeme často měnit velikost seznamu; pokud chceme pracovat se stále stejným počtem prvků, vystačíme si se statickým polem (`Array`).
