@@ -32,7 +32,7 @@ public class arraylistcv3 {
         }
 
         for (int i = 0; i < pocetTrid ; i++) {
-            System.out.println(i + 1 + ". třída:" + seznamTrid().get(i));
+            System.out.println(i + 1 + ". třída:" + seznamTrid.get(i));
         }
 
     }
