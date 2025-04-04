@@ -1,6 +1,6 @@
-## Co je OOP v Javě?
+## Co je Duben.OOP v Javě?
 
-Objektově orientované programování (OOP) je programovací paradigma, které organizuje kód do objektů.
+Objektově orientované programování (Duben.OOP) je programovací paradigma, které organizuje kód do objektů.
 
 - Každý objekt kombinuje
     - **`stav`** (atributy)
@@ -58,7 +58,7 @@ Jaké objekty by měla aplikace z minulého cvičení (2d ArrayList - seznam Tř
 
 ## Příklad jednoduché hry Blackjack
 
-Níže uvádíme dva příklady téže jednoduché hry – procedurální přístup a následně řešení v OOP stylu.
+Níže uvádíme dva příklady téže jednoduché hry – procedurální přístup a následně řešení v Duben.OOP stylu.
 
 ### Procedurální přístup
 
@@ -121,7 +121,7 @@ public class ProceduralBlackjack {
 
 ### Objektově orientovaný přístup
 
-V OOP verzi rozdělíme logiku do několika tříd – například třídy `Card`, `Deck`, `Player` a `BlackjackGame`. Ukázka
+V Duben.OOP verzi rozdělíme logiku do několika tříd – například třídy `Card`, `Deck`, `Player` a `BlackjackGame`. Ukázka
 zjednodušené verze:
 
 ```java
@@ -182,8 +182,8 @@ public class OOPBlackjackGame {
   pro jejich manipulaci.
 
 - **Rozdíly mezi procedurálním a objektovým přístupem:**  Procedurální kód je založen na funkcích a globálních datech,
-  zatímco OOP využívá třídy a objekty, které podporují zapouzdření, dědičnost a polymorfismus.
+  zatímco Duben.OOP využívá třídy a objekty, které podporují zapouzdření, dědičnost a polymorfismus.
 
-- **Výhody OOP:**  Lepší modularita, snazší údržba, opakovatelnost a možnost modelovat reálný svět.
+- **Výhody Duben.OOP:**  Lepší modularita, snazší údržba, opakovatelnost a možnost modelovat reálný svět.
 
-- **Nevýhody OOP:**  Vyšší složitost návrhu a mírný režijní náklad.
+- **Nevýhody Duben.OOP:**  Vyšší složitost návrhu a mírný režijní náklad.

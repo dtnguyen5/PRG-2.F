@@ -2,7 +2,7 @@ package Březen;
 
 public class Clovek {
 
-    // OOP
+    // Duben.OOP
     String jmeno;
     String prijmeni;
     int vek;
