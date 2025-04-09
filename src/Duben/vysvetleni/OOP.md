@@ -56,7 +56,7 @@ Jaké objekty by měla aplikace z minulého cvičení (2d ArrayList - seznam Tř
 ---
 
 
-## Příklad jednoduché hry Blackjack
+## Příklad jednoduché hry Duben.Blackjack
 
 Níže uvádíme dva příklady téže jednoduché hry – procedurální přístup a následně řešení v Duben.OOP stylu.
 
