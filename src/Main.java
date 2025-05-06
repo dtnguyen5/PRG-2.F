@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Třída slouží k načtení dat z konzole od uživatele
  */
-
+/*
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -55,3 +55,5 @@ class Film{
         System.out.printf("%-20s%-10s%-15s%-16d\n", name, formatLength(), "★".repeat(rating), year);
     }
 }
+
+ */
