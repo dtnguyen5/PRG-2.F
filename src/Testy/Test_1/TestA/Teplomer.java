@@ -27,10 +27,12 @@ public class Teplomer {
         this.umisteni = umisteni;
         this.vCelzii = vCelzii;
 
+        setTeplota(teplota);
+        /*
         if (teplota >= -50 && teplota <= 60){
             this.teplota = teplota;
         }
-
+         */
     }
 
     // <----------------------------- Přetížený kontstruktor ----------------------------->
