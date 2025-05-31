@@ -1,4 +1,4 @@
-package Testy.Test_1.TestA;
+package Testy.TestA;
 
 public class Teplomer {
 
@@ -59,4 +59,5 @@ public class Teplomer {
             this.teplota = teplota;
         }
     }
+
 }
