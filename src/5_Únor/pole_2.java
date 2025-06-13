@@ -6,14 +6,14 @@ public class pole_2 {
     public static void main(String[] args) {
 
         /*
-        Úkol 1
+        Červen.dedicnost.Úkol 1
         vytvořte si pole s 10 čísly.
                 Například;
         { 1 , 2 , 3 , 18 , -5 , -167 , 3 , 21 , 191 , 3 }
         Pole vypište zepředu i pozpátku
         */
 
-        // Úkol 1: Vytvoří a vypíše pole, nejprve normálně, pak pozpátku
+        // Červen.dedicnost.Úkol 1: Vytvoří a vypíše pole, nejprve normálně, pak pozpátku
 
         int[] pole = {1, 2, 3, 18, -5, -167, 3, 21, 191, 3};
 

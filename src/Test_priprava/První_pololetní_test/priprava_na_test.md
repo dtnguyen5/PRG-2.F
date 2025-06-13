@@ -4,7 +4,7 @@ Tento dokument slouží jako příprava na Testy.test z programování.
 
 ---
 
-## ✏️ Úkol 1: Práce se Scannerem
+## ✏️ Červen.dedicnost.Úkol 1: Práce se Scannerem
 
 ### Kód
 ```java

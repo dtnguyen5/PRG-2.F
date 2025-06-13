@@ -1,4 +1,4 @@
-package Červen.dedicnost;
+package Červen.dedicnost.ukol1;
 
 public class Vehicle {
     double speed;

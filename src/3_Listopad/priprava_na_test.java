@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class priprava_na_test {
     public static void main(String[] args) {
-        // Úkol 1
+        // Červen.dedicnost.Úkol 1
 
         Scanner input = new Scanner(System.in); // vytvoření scanneru
 
@@ -318,7 +318,7 @@ public class priprava_na_test {
          */
 
 
-        // Úkol 1: Vyhodnocení celočíselného dělení Vyhodnoťte výraz ručně a zvolte správnou odpověď:
+        // Červen.dedicnost.Úkol 1: Vyhodnocení celočíselného dělení Vyhodnoťte výraz ručně a zvolte správnou odpověď:
         // a : 0.85
         //b : 0
         //c : 1

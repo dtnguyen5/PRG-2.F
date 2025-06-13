@@ -9,7 +9,7 @@ public class Main {
 //        System.out.println(handrich.velikostPalceUNhoy);
 //        System.out.println(augustin.velikostPalceUNhoy);,
 
-        // Ukol 1
+        // Červen.dedicnost.Ukol 1
         /*
         Kniha k = new Kniha();
         k.nazevKnihy = "Romeo a Julie";

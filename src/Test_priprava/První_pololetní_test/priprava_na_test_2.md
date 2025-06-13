@@ -3,7 +3,7 @@
 Tento dokument slouží jako příprava na Testy.test z programování.
 
 ---
-##  Úkol 1: Vyhodnocení celočíselného dělení
+##  Červen.dedicnost.Úkol 1: Vyhodnocení celočíselného dělení
 
 ### Kód
 ```java
@@ -11,7 +11,7 @@ Tento dokument slouží jako příprava na Testy.test z programování.
 public class Main {
     public static void main(String[] args) {
 
-      // Úkol 1: Vyhodnocení celočíselného dělení Vyhodnoťte výraz ručně a zvolte správnou odpověď:
+      // Červen.dedicnost.Úkol 1: Vyhodnocení celočíselného dělení Vyhodnoťte výraz ručně a zvolte správnou odpověď:
       // a : 0.85
       // b : 0
       // c : 1

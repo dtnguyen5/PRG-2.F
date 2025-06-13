@@ -1,10 +1,11 @@
-package Červen.dedicnost;
+package Červen.dedicnost.ukol2;
 
 public class Student extends Person {
     private String school;
 
     public Student(String name, int age, String school) {
-        super(name, age, school);
+        super(name, age);
+        this.school = school;
     }
 
     @Override

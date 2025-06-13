@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class pole_7_predesly_ukol {
     public static void main(String[] args) {
 
-        // Úkol 1
+        // Červen.dedicnost.Úkol 1
         //vytvořte si pole s 10 čísly.
         //Například;
         //{ 1 , 2 , 3 , 18 , -5 , -167 , 3 , 21 , 191 , 3 }
